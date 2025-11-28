@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="tests/bootstrap.php" colors="true">
+    <coverage>
+        <report>
+            <text outputFile="coverage.txt"/>
+        </report>
+    </coverage>
+    <source>
+        <include>
+            <file>app/controllers/CadPessoaController.php</file>
+            <file>app/models/CadPessoaDAO.php</file>
+        </include>
+    </source>
+    <testsuites>
+        <testsuite name="Unit">
+            <directory>tests/Unit</directory>
+        </testsuite>
+        <testsuite name="Integration">
+            <directory>tests/Integration</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
